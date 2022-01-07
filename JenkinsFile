@@ -1,10 +1,9 @@
-
 pipeline {
-    agent any
+    agent any 
     stages {
-        stage('Hello world') {
+        stage('Stage 1') {
             steps {
-                sh 'python --version'
+                echo 'Hello world!' 
             }
         }
     }
